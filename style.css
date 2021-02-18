@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #f2faf4;
+    font-family: 
+    "Times New Roman", Times, serif;
+  }
+  
+  header {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 12;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 10px;
+  }
+
+  li {
+      margin: 7px;
+  }
+  
+  #header-img {
+    height: 4vw;
+    float: left;
+  }
+
+  #logo {
+    float: left;
+  }
+  
+  .feat-item {
+    display: flex;
+    background-color: #ace0b9;
+    margin: 25px;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  #nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1.3em;
+    background-color: #fff;
+    color: #000;
+  }
+
+  #menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #nav-bar ul {
+    list-style: none;
+    margin: 0px 2rem 0px 0px;
+  }
+
+  #nav-bar li {
+    display: block;
+    float: left;
+    padding: 0px 1em 0px 1em;
+    margin: 0px 0px 0px 0px;
+  }
+
+  #nav-bar li:hover {
+    background-color: #ace0b9;
+  }
+
+  #nav-bar a {
+    color: #000;
+    display: block;
+    padding: 19px;
+    text-decoration: none;
+  }
+
+  #nav-bar a:visited {
+    color: #000;
+  }
+  
+  .container {
+    margin-top: 100px;
+  }
+  
+  .product {
+    text-align: center;
+    border-style: solid;
+    margin: 33px;
+    width: 330px;
+    border-radius: 20px;
+  }
+  
+  .top {
+    background-color: #ace0b9;
+    font-weight: 800;
+    font-size: 1.3em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 6px;
+  }
+  
+  #pricing {
+    display: flex;
+    flex-direction: row;
+    scroll-margin-top: 5em;
+  }
+  
+  .product-info {
+    padding: 20px;
+  }
+  
+  #features {
+    margin-top: 40px;
+    scroll-margin-top: 5em;
+  }
+  
+  .fas {
+    color: #f2faf4;
+    margin-right: 20px;
+    font-size: 2em;
+  }
+
+  @media (min-width: 200px){
+    #video-section {
+        margin: 40px;
+      }
+  }
+
+  #get-started {
+      margin: 30px;
+  }
+
+  #support {
+      margin: 30px;
+      scroll-margin-top: 5em;
+  }
+
+  #form {
+      margin: 20px;
+  }
+
+  #submit {
+      padding: 3px;
+      margin: 3px;
+  }
+
+  #email {
+      padding: 3px;
+  }
+
+  button {
+      padding: 3px;
+  }
+
+  footer {
+      height: 80px;
+      background-color: #ace0b9;
+      padding: 10px;
+  }
+
+  span {
+      display: flex;
+      justify-content: flex-end;
+      background-color: #ace0b9;
+  }
+
+  #final-menu {
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  .final-item {
+    text-decoration: none;
+    color: black;
+  }
