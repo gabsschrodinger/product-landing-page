@@ -1,105 +1,211 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Cool Pen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #dfe4ea;
+        }
 
-<html>
-    <head>
-        <title>Super Cool Pen</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/6c1b9b6ddb.js" crossorigin="anonymous"></script>
-    </head>
+        .img-nav {
+            height: 47px;
+        }
 
-    <body>
-        
-        <header id="header">
-        
-        <nav id="nav-bar">
-            <div id="logo">
-                <img id="header-img" src="https://i.imgur.com/Ca6bJQd.gif" alt="super cool pen logo">
-            </div>
-            <div id="menu">
-                <ul id="bar-items">
-                <li><a class="nav-link" href="#features">Features</a></li>
-                <li><a class="nav-link" href="#pricing">Pricing</a></li>
-                <li><a class="nav-link" href="#support">Contact</a></li>
+        .fas {
+            margin-right: 20px;
+            font-size: 2em;
+        }
+
+        .feat-item {
+            background-color: #fff;
+            margin: 25px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        footer {
+            height: 80px;
+            background-color: #fff;
+            padding: 10px;
+        }
+
+        span {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #fff;
+        }
+
+        #final-menu {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+        }
+
+        .final-item {
+            padding-left: 5px;
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white mb-5">
+        <img class="img-nav ml-5" src="https://i.imgur.com/Ca6bJQd.gif" alt="super cool pen logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" href="#carouselExampleCaptions">Pictures</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="#support">Support</a>
+                </li>                
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contact
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                    <li><a class="dropdown-item" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
                 </ul>
+                </li>
+            </ul>
             </div>
-        </nav>
-        </header>
+        </div>
+    </nav>
+    <!--/navbar-->
 
-        <div class="container">
-        <section id="features">
-            <div class="feat-item">
-            <div class="icon">
-                <i class="fas fa-certificate"></i>
+    <div class="container">
+
+        <!--carousel-->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="description">
-                <h2>Made by specialists</h2>
-                <p>Our pen were projected by the greatest pen engineer of the entire world!</p>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://i.ytimg.com/vi/G01tWsnbWck/maxresdefault.jpg" class="d-block w-100" alt="Super Cool Pen">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Super Cool Pen</h5>
+                  <p>It's Super Cool. It can write! Have a nice design.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.wallpaperscraft.com/image/pen_ink_paper_126572_1280x720.jpg" class="d-block w-100" alt="Syper Hyper Cool Pen">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Super Hyper Cool Pen</h5>
+                  <p>It's Super Hyper Cool. It can write! Have a nicer design.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.wallpaperscraft.com/image/paper_leaf_line_pen_handwriting_text_31429_1280x720.jpg" class="d-block w-100" alt="Super Hyper Mega Cool Pen">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Super Hyper Mega Cool Pen</h5>
+                  <p>It's Super Hyper Mega Cool. It can write! Have the nicest design.</p>
+                </div>
+              </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <!--/carousel-->
+
+        <!--features-->
+        <section id="features" class="mb-5">
+            <div class="d-flex feat-item">
+                <div>
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div>
+                    <h2>Made by specialists</h2>
+                    <p>Our pen were projected by the greatest pen engineer of the entire world!</p>
+                </div>
             </div>
-            <div class="feat-item">
-            <div class="icon">
-                <i class="fas fa-running"></i>
+            <div class="d-flex feat-item">
+                <div>
+                    <i class="fas fa-running"></i>
+                </div>
+                <div>
+                    <h2>24/7 support</h2>
+                    <p>If you have any issue with your Super Cool Pen, our support team will help you at ANY TIME!</p>
+                </div>
             </div>
-            <div class="description">
-                <h2>24/7 support</h2>
-                <p>If you have any issue with your Super Cool Pen, our support team will help you at ANY TIME!</p>
-            </div>
-            </div>
-            <div class="feat-item">
-            <div class="icon">
-                <i class="fas fa-truck"></i>
-            </div>
-            <div class="description">
-                <h2>Logistics</h2>
-                <p>Our logistics teams will deliver the pen at your house as soon as you order it. And, in case you are not satisfied with the product (impossible, I would say), we provide free return.</p>
-            </div>
+            <div class="d-flex feat-item">
+                <div>
+                    <i class="fas fa-truck"></i>
+                </div>
+                <div>
+                    <h2>Logistics</h2>
+                    <p>Our logistics teams will deliver the pen at your house as soon as you order it. And, in case you are not satisfied with the product (impossible, I would say), we provide free return.</p>
+                </div>
             </div>
         </section>
+        <!--/features-->
 
-        <section id="video-section">
+        <!--video-->
+        <section id="video-section" class="d-flex align-items-center justify-content-center mb-5">
             <iframe id="video" title="Cool tricks you can do with a pen" width="623" height="350" src="https://www.youtube.com/embed/vW_kfY9D4CM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
-        
-        <section id="pricing">
-            <div class="product" id="super">
-            <div class="top">Super Cool Pen</div>
-            <div class="product-info">
-                <h2>$300</h2>
-                <ul>
-                <li>It's Super Cool</li>
-                <li>It can write!</li>
-                <li>Have a nice design</li>
-                </ul>
-                <button class="select-model">Select</button>
-            </div>
-            </div>
-            <div class="product" id="mega">
-            <div class="top">Super Hyper Cool Pen</div>
-            <div class="product-info">
-                <h2>$800</h2>
-                <ul>
-                <li>It's Super Hyper Cool</li>
-                <li>It can write!</li>
-                <li>Have a nicer design</li>
-                </ul>
-                <button class="select-model">Select</button>
-            </div>
-            </div>
-            <div class="product" id="hyper">
-            <div class="top">Super Hyper Mega Cool Pen</div>
-            <div class="product-info">
-                <h2>$1,200</h2>
-                <ul>
-                <li>It's Super Hyper Mega Cool</li>
-                <li>It can write!</li>
-                <li>Have the nicest design</li>
-                </ul>
-                <button class="select-model">Select</button>
-            </div>
+        <!--/video-->
+
+        <!--pricing-->
+        <section id="pricing" class="mb-5">
+            <div class="card-group">
+                <div class="card">
+                <img src="https://i.ytimg.com/vi/G01tWsnbWck/maxresdefault.jpg" class="card-img-top" alt="Super cool pen picture">
+                <div class="card-body">
+                    <h5 class="card-title">Super Cool Pen</h5>
+                    <h6 class="card-title">$300</h6>
+                    <p class="card-text">It's Super Cool. It can write! Have a nice design.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+                </div>
+                <div class="card">
+                <img src="https://images.wallpaperscraft.com/image/pen_ink_paper_126572_1280x720.jpg" class="card-img-top" alt="Super hyper cool pen picture">
+                <div class="card-body">
+                    <h5 class="card-title">Super Hyper Cool Pen</h5>
+                    <h6 class="card-title">$800</h6>
+                    <p class="card-text">It's Super Hyper Cool. It can write! Have a nicer design.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+                </div>
+                <div class="card">
+                <img src="https://images.wallpaperscraft.com/image/paper_leaf_line_pen_handwriting_text_31429_1280x720.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Super Hyper Mega Cool Pen</h5>
+                    <h6 class="card-title">$1,200</h6>
+                    <p class="card-text">It's Super Hyper Mega Cool. It can write! Have the nicest design.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+                </div>
             </div>
         </section>
+        <!--/pricing-->
 
-        <section id="support">
+        <!--support-->
+        <section id="support" class="mb-5">
             <div id="contact">
             <h2>Contact our support team:</h2>
             <ul>
@@ -108,24 +214,50 @@
             </ul>
             </div>
         </section>
+        <!--/support-->
 
-        <section id="get-started">
-            <h2>The coolest pen in the market!</h2>
-            <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <input name="email" id="email" type="email" placeholder="Enter your email address" required>
-            <input id="submit" type="submit" value="GET IT NOW">
-            </form>
-        </section>
-        
-        </div>
+        <!--get-started-->
+        <h2>Get started with the COOLEST PEN IN THE MARKET!</h2>
+        <form class="mb-5">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address" onkeyup="validateEmail()">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Full name</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your full name" onkeyup="validateName()">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Super Cool Pen</label>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Super Hyper Cool Pen</label>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Super Hyper Mega Cool Pen</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-dark" onclick="send()">GET IT NOW!</button>
+        </form>
+        <!--/get-started-->
 
-        <footer>
-            <ul id="final-menu">
-                <li><a class="final-item" href="#"">Privacy</a></li>
-                <li><a class="final-item" href="#"">Terms</a></li>
-                <li><a class="final-item" href="#"">About</a></li>
-            </ul>
-            <span>Copyright 2099, Super Cool Pen Company</span>
-        </footer>
-    </body>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <ul id="final-menu">
+            <li><a class="final-item" href="#"">Privacy</a></li>
+            <li><a class="final-item" href="#"">Terms</a></li>
+            <li><a class="final-item" href="#"">About</a></li>
+        </ul>
+        <span>Copyright 2099, Super Cool Pen Company</span>
+    </footer>
+    <!--/footer-->
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/6c1b9b6ddb.js" crossorigin="anonymous"></script>
+</body>
 </html>
