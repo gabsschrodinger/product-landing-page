@@ -1,4 +1,4 @@
-alert("This is a fictional webpage, made by Gabriel Fernandes Ribeiro (GitHub: https://github.com/gabsschrodinger");
+alert("This is a fictional webpage, made by Gabriel Fernandes Ribeiro (GitHub: https://github.com/gabsschrodinger)");
 
 let email = document.querySelector("input#exampleInputEmail1");
 let fullName = document.querySelector("input#exampleInputPassword1");
