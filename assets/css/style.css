@@ -55,6 +55,10 @@ span {
     height: 350px;
 }
 
+.contact-list {
+    list-style-type: square;
+}
+
 @media screen and (max-width: 750px) {
     #video-section iframe {
         width: 311px;
